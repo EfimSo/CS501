@@ -66,7 +66,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             Button(onClick = {
                 displayed = !displayed
             }) {
-                Text(text = "Click me")
+                Text(text = "Greet me")
             }
         }
     }
