@@ -55,18 +55,22 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         ) {
             if (displayed) {
                 Text(
-                    text = "Hello $name!",
-                    fontSize = 30.sp,
+                    text = "Hello $name",
+                    fontSize = 40.sp,
                     modifier = Modifier.height(50.dp)
                 )
             }
             else{
                 Spacer(modifier = Modifier.height(50.dp)) // ensures consistent button position
             }
+            Spacer(modifier = Modifier.height(10.dp))
             Button(onClick = {
                 displayed = !displayed
             }) {
-                Text(text = "Greet me")
+                Text(
+                    text = "Greet me",
+                    fontSize = 15.sp
+                )
             }
         }
     }
